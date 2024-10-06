@@ -7,6 +7,5 @@ highlighting the attention to detail and craftsmanship that goes into each proje
 
 Whether you're a designer, developer, or simply someone who appreciates great design, this website is definitely worth checking out. 
 Take a look and get inspired!
-![frontend mentor built ](https://github.com/user-attachments/assets/0e8390c6-8d2b-4e09-866f-91e84482e396)
 
 ## You can visit Site @https://omashozie.github.io/Grid-Portfolio/
