@@ -1,4 +1,4 @@
-### "Discover the simplicity and elegance of Omashozie's Grid New homepage website! From Frontend Mentor Challenge 
+### "Discover the simplicity and elegance of Omashozie's Grid News homepage website! From Frontend Mentor Challenge 
 This beautifully designed site showcases an impressive collection of projects in a clean and intuitive grid layout.
 The website's minimalist approach allows the viewer to focus on the content, 
 making it easy to navigate and explore the various projects on display. 
