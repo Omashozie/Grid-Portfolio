@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  max-width: 100%;
+}
+
+body {
+  background-color: hsl(36, 100%, 99%);
+  display: block;
+  place-items: center;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "c d b"
+    "e f g";
+  gap: 20px;
+  width: 70%;
+  margin: auto;
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    width: max-content;
+    display: block;
+    max-width: 300px;
+    padding: 10px;
+  }
+  body {
+    width: 40%;
+    padding: 10px;
+  }
+  header {
+    width: 50%;
+  }
+  .a, .b, .c, .d, .e, .f, .g{
+    margin: 20px 0;
+  }
+  .g{padding-top: 20px;}
+}
+
+nav ul {
+  width: 75%;
+  margin: auto;
+  /*to work with the width size*/
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  color: hsl(236, 13%, 42%);
+  display: inline;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 10px;
+}
+
+li:hover {
+  color: hsl(5, 85%, 63%);
+  font-size: 20px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: black;
+  top: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  nav ul {
+    padding: 0px 50px 10px 10px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-item {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    gap: 5px;
+    flex-direction: column;
+    background-color: whitesmoke;
+    transition: 0.5s;
+    width: 100%;
+    height: 100vh;
+    text-align: right;
+  }
+
+  .nav-item.active {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  nav ul {
+    padding: 0px 0px 10px 10px;
+    gap: 190px;
+  }
+}
+
+#N {
+  color: hsl(35, 77%, 62%);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.a {
+  grid-area: a;
+}
+
+@media screen and (max-width: 800px) {
+  .a img {
+    height: 40vh;
+  }
+}
+
+.b {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(233, 8%, 79%);
+  padding: 20px;
+  grid-area: b;
+}
+h1 {
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-shadow: 70px;
+  line-height: 1em;
+}
+hr{
+  margin: 18px 0;
+}
+h2 {
+  color: hsl(5, 85%, 63%);
+}
+
+h3 {
+  color: hsl(36, 100%, 99%);
+}
+
+h3:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+
+h4 {
+  color: hsl(240, 100%, 5%);
+}
+
+h4:hover {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
+
+.c {
+  color: hsl(240, 100%, 5%);
+  grid-area: c;
+}
+
+.d {
+  color: hsl(233, 8%, 79%);
+  grid-area: d;
+}
+
+.e img {
+  grid-area: e;
+  float: left;
+  width: 100px;
+  height: 100px;
+  padding-right: 15px;
+}
+
+.f img {
+  grid-area: f;
+  float: left;
+  width: 100px;
+  height: 100px;
+  padding-right: 15px;
+}
+
+.g img {
+  grid-area: g;
+  float: left;
+  width: 100px;
+  height: 100px;
+  padding-right: 15px;
+  clear: left;
+}
+
+.e,
+.f,
+.g {
+  color: hsl(233, 8%, 79%);
+}
+
+button {
+  background-color: hsl(5, 85%, 63%);
+  color: black;
+  padding: 10px 30px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: rgb(170, 20, 20);
+}
+
+.attribution {
+  width: 100%;
+text-align: center;
+  padding: 10px;
+}
